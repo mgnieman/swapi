@@ -1,8 +1,8 @@
 import React from 'react';
 // import Axios from 'axios';
-import ListOfNamesList from './ListOfNamesList';
+import NamesList from './NamesList';
 
-class ListOfNamesContainer extends React.Component {
+class NamesContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,10 +44,10 @@ class ListOfNamesContainer extends React.Component {
   render() {
     return (
       <ul>
-        <ListOfNamesList data={this.state.names} />
+        <NamesList data={this.state.names} />
       </ul>
     );
   }
 }
 
-export default ListOfNamesContainer;
+export default NamesContainer;

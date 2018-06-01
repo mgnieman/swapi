@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import ListOfNamesContainer from './Person/ListOfNamesContainer';
+import NamesContainer from './Name/NamesContainer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ListOfNamesContainer />
+        <NamesContainer />
       </div>
     );
   }
