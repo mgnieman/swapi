@@ -29,7 +29,7 @@ class ListOfNamesContainer extends React.Component {
       )
       .then(names =>
         this.setState({
-          names: this.state.names
+          names
         })
       )
       // .then(console.log('state: ', this.state))
@@ -43,9 +43,9 @@ class ListOfNamesContainer extends React.Component {
 
   render() {
     return (
-      <div>
-        <ListOfNamesList names={this.state.names} />
-      </div>
+      <ul>
+        <ListOfNamesList data={this.state.names} />
+      </ul>
     );
   }
 }

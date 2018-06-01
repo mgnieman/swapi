@@ -1,13 +1,9 @@
 import React from 'react';
+import ListOfNames from './ListOfNames';
 
-const ListOfNamesList = props => (
-  console.log('props:', props),
-  (
-    <div>
-      <p>list</p>
-      {props.data}
-    </div>
-  )
-);
+const ListOfNamesList = props =>
+  props.data.map(obj => {
+    return <ListOfNames data={obj.name} />;
+  });
 
 export default ListOfNamesList;
